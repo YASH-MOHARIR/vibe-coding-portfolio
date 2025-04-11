@@ -22,10 +22,11 @@
         </div>
     </div>
 
-    <div class="cursor" id="cursor">
+    <!-- <div class="cursor" id="cursor">
         <div class="cursor-dot"></div>
         <div class="cursor-outline"></div>
-    </div>
+        <div class="cursor-text"></div>
+    </div> -->
 
     <header class="header" id="header">
         <div class="container">
@@ -67,23 +68,28 @@
     <main>
         <section id="home" class="hero-section">
             <div class="hero-bg">
-                <div class="hero-shape hero-shape-1"></div>
-                <div class="hero-shape hero-shape-2"></div>
-                <div class="hero-shape hero-shape-3"></div>
-                <div class="hero-shape hero-shape-4"></div>
+                <div class="hero-shape hero-shape-1" data-speed="0.05"></div>
+                <div class="hero-shape hero-shape-2" data-speed="0.07"></div>
+                <div class="hero-shape hero-shape-3" data-speed="0.03"></div>
+                <div class="hero-shape hero-shape-4" data-speed="0.09"></div>
             </div>
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">We Create<br><span class="gradient-text">Digital Experience</span></h1>
                     <p class="hero-subtitle">Award-winning design studio crafting stunning digital journeys that elevate brands and engage audiences.</p>
                     <div class="hero-buttons">
-                        <a href="#work" class="btn btn-primary">View Our Work</a>
-                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                        <a href="#work" class="btn btn-primary"><span>View Our Work</span></a>
+                        <a href="#contact" class="btn btn-outline"><span>Get In Touch</span></a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Digital Design">
+                    <div class="hero-image-inner">
+                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Digital Design">
+                    </div>
                     <div class="hero-image-overlay"></div>
+                    <div class="floating-element floating-circle"></div>
+                    <div class="floating-element floating-square"></div>
+                    <div class="floating-element floating-triangle"></div>
                 </div>
             </div>
             <div class="scroll-indicator">
@@ -95,6 +101,14 @@
         </section>
 
         <section id="services" class="services-section">
+            <div class="decorative-elements">
+                <div class="floating-dot dot-1"></div>
+                <div class="floating-dot dot-2"></div>
+                <div class="floating-dot dot-3"></div>
+                <div class="floating-line line-1"></div>
+                <div class="floating-line line-2"></div>
+                <div class="floating-shape shape-1"></div>
+            </div>
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Our Services</h2>
@@ -102,36 +116,48 @@
                 </div>
                 <div class="services-grid">
                     <div class="service-card" data-index="1">
-                        <div class="service-icon">
-                            <i class="fas fa-pencil-ruler"></i>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <h3 class="service-title">UI/UX Design</h3>
+                            <p class="service-description">Creating intuitive, engaging user experiences that delight and convert.</p>
+                            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <div class="service-card-glare"></div>
                         </div>
-                        <h3 class="service-title">UI/UX Design</h3>
-                        <p class="service-description">Creating intuitive, engaging user experiences that delight and convert.</p>
-                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="service-card" data-index="2">
-                        <div class="service-icon">
-                            <i class="fas fa-code"></i>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="service-title">Web Development</h3>
+                            <p class="service-description">Building high-performance, responsive websites with cutting-edge technologies.</p>
+                            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <div class="service-card-glare"></div>
                         </div>
-                        <h3 class="service-title">Web Development</h3>
-                        <p class="service-description">Building high-performance, responsive websites with cutting-edge technologies.</p>
-                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="service-card" data-index="3">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="service-title">Mobile Apps</h3>
+                            <p class="service-description">Designing and developing native and cross-platform mobile applications.</p>
+                            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <div class="service-card-glare"></div>
                         </div>
-                        <h3 class="service-title">Mobile Apps</h3>
-                        <p class="service-description">Designing and developing native and cross-platform mobile applications.</p>
-                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="service-card" data-index="4">
-                        <div class="service-icon">
-                            <i class="fas fa-paint-brush"></i>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="service-title">Brand Identity</h3>
+                            <p class="service-description">Creating cohesive visual identities that strengthen brand recognition.</p>
+                            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            <div class="service-card-glare"></div>
                         </div>
-                        <h3 class="service-title">Brand Identity</h3>
-                        <p class="service-description">Creating cohesive visual identities that strengthen brand recognition.</p>
-                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -150,9 +176,11 @@
                     <button class="filter-btn" data-filter="branding">Branding</button>
                 </div>
                 <div class="work-grid">
-                    <div class="work-item" data-category="web">
+                    <div class="work-item" data-category="web" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
                         <div class="work-image">
-                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Web Design Project">
+                            <div class="work-image-inner">
+                                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Web Design Project">
+                            </div>
                             <div class="work-overlay">
                                 <div class="work-details">
                                     <h3 class="work-title">Harmony Dashboard</h3>
@@ -160,11 +188,18 @@
                                     <a href="#" class="work-link">View Project</a>
                                 </div>
                             </div>
+                            <div class="work-item-decorations">
+                                <div class="decoration-dot"></div>
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-plus">+</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="work-item" data-category="mobile">
+                    <div class="work-item" data-category="mobile" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
                         <div class="work-image">
-                            <img src="https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mobile App Project">
+                            <div class="work-image-inner">
+                                <img src="https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mobile App Project">
+                            </div>
                             <div class="work-overlay">
                                 <div class="work-details">
                                     <h3 class="work-title">Pulse Fitness App</h3>
@@ -172,11 +207,18 @@
                                     <a href="#" class="work-link">View Project</a>
                                 </div>
                             </div>
+                            <div class="work-item-decorations">
+                                <div class="decoration-dot"></div>
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-plus">+</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="work-item" data-category="branding">
+                    <div class="work-item" data-category="branding" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
                         <div class="work-image">
-                            <img src="https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Branding Project">
+                            <div class="work-image-inner">
+                                <img src="https://images.pexels.com/photos/6956/person-woman-apple-laptop.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Branding Project">
+                            </div>
                             <div class="work-overlay">
                                 <div class="work-details">
                                     <h3 class="work-title">Neon Collective</h3>
@@ -184,11 +226,18 @@
                                     <a href="#" class="work-link">View Project</a>
                                 </div>
                             </div>
+                            <div class="work-item-decorations">
+                                <div class="decoration-dot"></div>
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-plus">+</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="work-item" data-category="web">
+                    <div class="work-item" data-category="web" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
                         <div class="work-image">
-                            <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="E-commerce Project">
+                            <div class="work-image-inner">
+                                <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="E-commerce Project">
+                            </div>
                             <div class="work-overlay">
                                 <div class="work-details">
                                     <h3 class="work-title">Luxe E-Commerce</h3>
@@ -196,11 +245,18 @@
                                     <a href="#" class="work-link">View Project</a>
                                 </div>
                             </div>
+                            <div class="work-item-decorations">
+                                <div class="decoration-dot"></div>
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-plus">+</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="work-item" data-category="branding">
+                    <div class="work-item" data-category="branding" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
                         <div class="work-image">
-                            <img src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Typography Project">
+                            <div class="work-image-inner">
+                                <img src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Typography Project">
+                            </div>
                             <div class="work-overlay">
                                 <div class="work-details">
                                     <h3 class="work-title">Apex Visual Identity</h3>
@@ -208,17 +264,29 @@
                                     <a href="#" class="work-link">View Project</a>
                                 </div>
                             </div>
+                            <div class="work-item-decorations">
+                                <div class="decoration-dot"></div>
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-plus">+</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="work-item" data-category="mobile">
+                    <div class="work-item" data-category="mobile" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
                         <div class="work-image">
-                            <img src="https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="UI Project">
+                            <div class="work-image-inner">
+                                <img src="https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="UI Project">
+                            </div>
                             <div class="work-overlay">
                                 <div class="work-details">
                                     <h3 class="work-title">Echo Music Player</h3>
                                     <p class="work-category">Mobile Interface</p>
                                     <a href="#" class="work-link">View Project</a>
                                 </div>
+                            </div>
+                            <div class="work-item-decorations">
+                                <div class="decoration-dot"></div>
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-plus">+</div>
                             </div>
                         </div>
                     </div>
@@ -232,14 +300,14 @@
         <section id="about" class="about-section">
             <div class="container">
                 <div class="about-content">
-                    <div class="about-image">
+                    <div class="about-image" data-tilt data-tilt-max="5" data-tilt-speed="300" data-tilt-perspective="1000">
                         <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Our Studio">
                         <div class="about-image-shape"></div>
                     </div>
                     <div class="about-text">
                         <h2 class="section-title">Who We Are</h2>
-                        <p class="about-paragraph">Founded in 2015, Prism Creative is a digital design studio with a passion for creating beautiful, functional digital experiences that solve real problems.</p>
-                        <p class="about-paragraph">Our team of designers, developers, and strategists work collaboratively to bring ambitious projects to life. We believe in a user-centered approach, focusing on creating solutions that are not only visually stunning but also intuitive and accessible.</p>
+                        <p class="about-paragraph reveal-text">Founded in 2015, Prism Creative is a digital design studio with a passion for creating beautiful, functional digital experiences that solve real problems.</p>
+                        <p class="about-paragraph reveal-text">Our team of designers, developers, and strategists work collaboratively to bring ambitious projects to life. We believe in a user-centered approach, focusing on creating solutions that are not only visually stunning but also intuitive and accessible.</p>
                         <div class="about-stats">
                             <div class="stat">
                                 <div class="stat-number" data-count="120">0</div>
@@ -267,9 +335,11 @@
                     <p class="section-subtitle">Meet the talented people behind our success</p>
                 </div>
                 <div class="team-grid">
-                    <div class="team-member">
+                    <div class="team-member" data-tilt data-tilt-max="5" data-tilt-speed="300" data-tilt-perspective="1000">
                         <div class="member-image">
-                            <img src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            <div class="member-image-inner">
+                                <img src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            </div>
                             <div class="member-social">
                                 <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
@@ -279,9 +349,11 @@
                         <h3 class="member-name">Emma Richards</h3>
                         <p class="member-role">Creative Director</p>
                     </div>
-                    <div class="team-member">
+                    <div class="team-member" data-tilt data-tilt-max="5" data-tilt-speed="300" data-tilt-perspective="1000">
                         <div class="member-image">
-                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            <div class="member-image-inner">
+                                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            </div>
                             <div class="member-social">
                                 <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
@@ -291,9 +363,11 @@
                         <h3 class="member-name">David Chen</h3>
                         <p class="member-role">Lead Developer</p>
                     </div>
-                    <div class="team-member">
+                    <div class="team-member" data-tilt data-tilt-max="5" data-tilt-speed="300" data-tilt-perspective="1000">
                         <div class="member-image">
-                            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            <div class="member-image-inner">
+                                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            </div>
                             <div class="member-social">
                                 <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
@@ -303,9 +377,11 @@
                         <h3 class="member-name">Sarah Johnson</h3>
                         <p class="member-role">UI/UX Designer</p>
                     </div>
-                    <div class="team-member">
+                    <div class="team-member" data-tilt data-tilt-max="5" data-tilt-speed="300" data-tilt-perspective="1000">
                         <div class="member-image">
-                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            <div class="member-image-inner">
+                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            </div>
                             <div class="member-social">
                                 <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
@@ -426,28 +502,41 @@
                     <div class="contact-form">
                         <form id="contact-form">
                             <div class="form-group">
-                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
-                                <label for="name" class="form-label">Your Name</label>
+                                <div class="form-group-inner">
+                                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <div class="form-highlight"></div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="email" class="form-control" placeholder="Your Email" required>
-                                <label for="email" class="form-label">Your Email</label>
+                                <div class="form-group-inner">
+                                    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <div class="form-highlight"></div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <select id="subject" class="form-control" required>
-                                    <option value="" disabled selected>Select Service</option>
-                                    <option value="ui-ux">UI/UX Design</option>
-                                    <option value="web">Web Development</option>
-                                    <option value="mobile">Mobile App</option>
-                                    <option value="branding">Branding</option>
-                                </select>
-                                <label for="subject" class="form-label">Select Service</label>
+                                <div class="form-group-inner">
+                                    <select id="subject" class="form-control" required>
+                                        <option value="" disabled selected></option>
+                                        <option value="ui-ux">UI/UX Design</option>
+                                        <option value="web">Web Development</option>
+                                        <option value="mobile">Mobile App</option>
+                                        <option value="branding">Branding</option>
+                                    </select>
+                                    <label for="subject" class="form-label">Select Service</label>
+                                    <div class="form-highlight"></div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <textarea id="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
-                                <label for="message" class="form-label">Your Message</label>
+                                <div class="form-group-inner">
+                                    <textarea id="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
+                                    <label for="message" class="form-label">Your Message</label>
+                                    <div class="form-highlight"></div>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-submit">
+                                <div class="btn-submit-bg"></div>
                                 <span>Send Message</span>
                                 <i class="fas fa-paper-plane"></i>
                             </button>
@@ -502,10 +591,12 @@
                     <p>Subscribe to our newsletter for design insights and company news.</p>
                     <form class="newsletter-form">
                         <div class="form-group">
-                            <input type="email" id="newsletter-email" class="form-control" placeholder="Your Email" required>
-                            <button type="submit" class="btn-newsletter">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
+                            <div class="form-group-inner">
+                                <input type="email" id="newsletter-email" class="form-control" placeholder="Your Email" required>
+                                <button type="submit" class="btn-newsletter">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -523,6 +614,286 @@
         </div>
     </footer>
 
+    <!-- Additional animations CSS for floating elements -->
+    <style>
+        .floating-element {
+            position: absolute;
+            z-index: 1;
+            opacity: 0.4;
+        }
+        
+        .floating-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #6c63ff, #ff6b6b);
+            top: 20%;
+            left: -20px;
+            animation: floatElement 8s ease-in-out infinite;
+        }
+        
+        .floating-square {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(45deg, #4ecdc4, #6c63ff);
+            bottom: 20%;
+            right: -15px;
+            animation: floatElement 6s ease-in-out 1s infinite reverse;
+        }
+        
+        .floating-triangle {
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 45px solid rgba(255, 107, 107, 0.5);
+            top: 60%;
+            right: 30px;
+            animation: floatElement 10s ease-in-out 0.5s infinite;
+        }
+        
+        .floating-dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #6c63ff;
+            opacity: 0.3;
+        }
+        
+        .dot-1 {
+            top: 15%;
+            left: 10%;
+            animation: floatElement 8s ease-in-out infinite;
+        }
+        
+        .dot-2 {
+            top: 25%;
+            right: 15%;
+            animation: floatElement 7s ease-in-out 1s infinite reverse;
+        }
+        
+        .dot-3 {
+            bottom: 20%;
+            left: 20%;
+            animation: floatElement 9s ease-in-out 0.5s infinite;
+        }
+        
+        .floating-line {
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #6c63ff, transparent);
+            opacity: 0.2;
+        }
+        
+        .line-1 {
+            top: 35%;
+            left: 5%;
+            transform: rotate(45deg);
+            animation: floatElement 10s ease-in-out infinite;
+        }
+        
+        .line-2 {
+            bottom: 30%;
+            right: 10%;
+            transform: rotate(-45deg);
+            animation: floatElement 8s ease-in-out 1s infinite reverse;
+        }
+        
+        .floating-shape {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 2px dashed #6c63ff;
+            border-radius: 10px;
+            opacity: 0.2;
+            transform: rotate(20deg);
+        }
+        
+        .shape-1 {
+            bottom: 10%;
+            right: 20%;
+            animation: floatAndRotate 12s ease-in-out infinite;
+        }
+        
+        .decoration-dot,
+        .decoration-circle,
+        .decoration-plus {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.4s ease;
+        }
+        
+        .decoration-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #6c63ff;
+            border-radius: 50%;
+            top: 20px;
+            right: 20px;
+        }
+        
+        .decoration-circle {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #ff6b6b;
+            border-radius: 50%;
+            bottom: 20px;
+            left: 20px;
+            transform: scale(0);
+        }
+        
+        .decoration-plus {
+            font-size: 24px;
+            color: #4ecdc4;
+            bottom: 15px;
+            right: 20px;
+            transform: rotate(45deg);
+        }
+        
+        .work-item:hover .decoration-dot {
+            opacity: 0.7;
+            transform: translateY(-5px);
+        }
+        
+        .work-item:hover .decoration-circle {
+            opacity: 0.7;
+            transform: scale(1);
+        }
+        
+        .work-item:hover .decoration-plus {
+            opacity: 0.7;
+            transform: rotate(0);
+        }
+        
+        @keyframes floatElement {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(10px, 15px); }
+            100% { transform: translate(0, 0); }
+        }
+        
+        @keyframes floatAndRotate {
+            0% { transform: translate(0, 0) rotate(20deg); }
+            50% { transform: translate(10px, 15px) rotate(40deg); }
+            100% { transform: translate(0, 0) rotate(20deg); }
+        }
+        
+        .reveal-text {
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition-delay: var(--delay, 0s);
+        }
+        
+        .reveal-text.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .form-highlight {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #6c63ff, #ff6b6b);
+            transition: width 0.3s ease;
+        }
+        
+        .form-control:focus ~ .form-highlight {
+            width: 100%;
+        }
+        
+        .service-card-glare {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.3) 0%,
+                rgba(255, 255, 255, 0) 50%
+            );
+            transform: translateX(-100%);
+            pointer-events: none;
+        }
+        
+        .service-card:hover .service-card-glare {
+            animation: shine 1.5s ease-in-out;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .btn-submit-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: var(--radius-full);
+            z-index: -1;
+            background: linear-gradient(90deg, #6c63ff, #ff6b6b, #4ecdc4, #6c63ff);
+            background-size: 300% 100%;
+            animation: gradientMove 8s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .btn-submit:hover .btn-submit-bg {
+            opacity: 1;
+        }
+        
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 300% 50%; }
+        }
+    </style>
+
     <script src="js/script.js"></script>
+    
+    <!-- Tilt.js for 3D card effects -->
+    <script type="text/javascript">
+        // Simple tilt effect for cards (vanilla JS implementation)
+        document.addEventListener('DOMContentLoaded', function() {
+            const tiltElements = document.querySelectorAll('[data-tilt]');
+            
+            tiltElements.forEach(element => {
+                const maxTilt = element.getAttribute('data-tilt-max') || 10;
+                const speed = element.getAttribute('data-tilt-speed') || 400;
+                const perspective = element.getAttribute('data-tilt-perspective') || 1000;
+                
+                element.style.transformStyle = 'preserve-3d';
+                element.style.transition = `transform ${speed}ms ease`;
+                
+                element.addEventListener('mousemove', handleTilt);
+                element.addEventListener('mouseleave', resetTilt);
+                
+                function handleTilt(e) {
+                    const rect = element.getBoundingClientRect();
+                    const centerX = rect.left + rect.width / 2;
+                    const centerY = rect.top + rect.height / 2;
+                    
+                    const percentX = (e.clientX - centerX) / (rect.width / 2);
+                    const percentY = (e.clientY - centerY) / (rect.height / 2);
+                    
+                    const tiltX = maxTilt * percentY * -1;
+                    const tiltY = maxTilt * percentX;
+                    
+                    element.style.transform = `perspective(${perspective}px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+                }
+                
+                function resetTilt() {
+                    element.style.transform = `perspective(${perspective}px) rotateX(0deg) rotateY(0deg)`;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
