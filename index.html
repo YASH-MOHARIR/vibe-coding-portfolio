@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism Creative - Digital Design Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader">
+            <svg class="logo-svg" width="80" height="80" viewBox="0 0 80 80">
+                <polygon class="logo-triangle" points="40,5 75,65 5,65" fill="none" stroke="#6c63ff" stroke-width="2"/>
+                <circle class="logo-circle" cx="40" cy="40" r="20" fill="none" stroke="#6c63ff" stroke-width="2"/>
+            </svg>
+            <div class="loading-text">PRISM</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 80 80">
+                    <polygon points="40,5 75,65 5,65" fill="none" stroke="#6c63ff" stroke-width="2"/>
+                    <circle cx="40" cy="40" r="20" fill="none" stroke="#6c63ff" stroke-width="2"/>
+                </svg>
+                <span>PRISM</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link">Our Work</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+            <div class="mobile-menu" id="mobile-menu">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item"><a href="#home" class="mobile-nav-link">Home</a></li>
+                    <li class="mobile-nav-item"><a href="#services" class="mobile-nav-link">Services</a></li>
+                    <li class="mobile-nav-item"><a href="#work" class="mobile-nav-link">Our Work</a></li>
+                    <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link">About</a></li>
+                    <li class="mobile-nav-item"><a href="#team" class="mobile-nav-link">Team</a></li>
+                    <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-bg">
+                <div class="hero-shape hero-shape-1"></div>
+                <div class="hero-shape hero-shape-2"></div>
+                <div class="hero-shape hero-shape-3"></div>
+                <div class="hero-shape hero-shape-4"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">We Create<br><span class="gradient-text">Digital Experience</span></h1>
+                    <p class="hero-subtitle">Award-winning design studio crafting stunning digital journeys that elevate brands and engage audiences.</p>
+                    <div class="hero-buttons">
+                        <a href="#work" class="btn btn-primary">View Our Work</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Digital Design">
+                    <div class="hero-image-overlay"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll</div>
+                <div class="scroll-icon">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Exceptional digital solutions tailored to your needs</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-index="1">
+                        <div class="service-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-description">Creating intuitive, engaging user experiences that delight and convert.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card" data-index="2">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Building high-performance, responsive websites with cutting-edge technologies.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card" data-index="3">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Mobile Apps</h3>
+                        <p class="service-description">Designing and developing native and cross-platform mobile applications.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card" data-index="4">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="service-title">Brand Identity</h3>
+                        <p class="service-description">Creating cohesive visual identities that strengthen brand recognition.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Work</h2>
+                    <p class="section-subtitle">Selected projects that showcase our expertise</p>
+                </div>
+                <div class="work-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                </div>
+                <div class="work-grid">
+                    <div class="work-item" data-category="web">
+                        <div class="work-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Web Design Project">
+                            <div class="work-overlay">
+                                <div class="work-details">
+                                    <h3 class="work-title">Harmony Dashboard</h3>
+                                    <p class="work-category">Web Design</p>
+                                    <a href="#" class="work-link">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item" data-category="mobile">
+                        <div class="work-image">
+                            <img src="https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mobile App Project">
+                            <div class="work-overlay">
+                                <div class="work-details">
+                                    <h3 class="work-title">Pulse Fitness App</h3>
+                                    <p class="work-category">Mobile App</p>
+                                    <a href="#" class="work-link">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item" data-category="branding">
+                        <div class="work-image">
+                            <img src="https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Branding Project">
+                            <div class="work-overlay">
+                                <div class="work-details">
+                                    <h3 class="work-title">Neon Collective</h3>
+                                    <p class="work-category">Brand Identity</p>
+                                    <a href="#" class="work-link">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item" data-category="web">
+                        <div class="work-image">
+                            <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="E-commerce Project">
+                            <div class="work-overlay">
+                                <div class="work-details">
+                                    <h3 class="work-title">Luxe E-Commerce</h3>
+                                    <p class="work-category">Web Development</p>
+                                    <a href="#" class="work-link">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item" data-category="branding">
+                        <div class="work-image">
+                            <img src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Typography Project">
+                            <div class="work-overlay">
+                                <div class="work-details">
+                                    <h3 class="work-title">Apex Visual Identity</h3>
+                                    <p class="work-category">Brand Design</p>
+                                    <a href="#" class="work-link">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item" data-category="mobile">
+                        <div class="work-image">
+                            <img src="https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="UI Project">
+                            <div class="work-overlay">
+                                <div class="work-details">
+                                    <h3 class="work-title">Echo Music Player</h3>
+                                    <p class="work-category">Mobile Interface</p>
+                                    <a href="#" class="work-link">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-cta">
+                    <a href="#contact" class="btn btn-primary">Start a Project With Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Our Studio">
+                        <div class="about-image-shape"></div>
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title">Who We Are</h2>
+                        <p class="about-paragraph">Founded in 2015, Prism Creative is a digital design studio with a passion for creating beautiful, functional digital experiences that solve real problems.</p>
+                        <p class="about-paragraph">Our team of designers, developers, and strategists work collaboratively to bring ambitious projects to life. We believe in a user-centered approach, focusing on creating solutions that are not only visually stunning but also intuitive and accessible.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-number" data-count="120">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-count="15">0</div>
+                                <div class="stat-label">Team Members</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-count="8">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                        </div>
+                        <a href="#team" class="btn btn-primary">Meet Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Team</h2>
+                    <p class="section-subtitle">Meet the talented people behind our success</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member-name">Emma Richards</h3>
+                        <p class="member-role">Creative Director</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member-name">David Chen</h3>
+                        <p class="member-role">Lead Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member-name">Sarah Johnson</h3>
+                        <p class="member-role">UI/UX Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member">
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member-name">Michael Thompson</h3>
+                        <p class="member-role">Frontend Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Trusted by forward-thinking businesses around the world</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">The team at Prism Creative exceeded our expectations at every turn. Their attention to detail and innovative approach transformed our digital presence completely.</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Client" class="author-image">
+                                <div class="author-info">
+                                    <h4 class="author-name">Jennifer Williams</h4>
+                                    <p class="author-company">CEO, Horizon Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">Working with Prism on our app redesign was a game-changer. User engagement increased by 45% within the first month after launch.</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Client" class="author-image">
+                                <div class="author-info">
+                                    <h4 class="author-name">Robert Martinez</h4>
+                                    <p class="author-company">Product Manager, Nexus Tech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">The e-commerce platform Prism designed for us has been instrumental in our growth. The intuitive interface and seamless checkout process significantly improved our conversion rates.</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Client" class="author-image">
+                                <div class="author-info">
+                                    <h4 class="author-name">Amanda Lewis</h4>
+                                    <p class="author-company">Marketing Director, Elevate Brands</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-dot active" data-slide="0"></button>
+                    <button class="testimonial-dot" data-slide="1"></button>
+                    <button class="testimonial-dot" data-slide="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="contact-description">Ready to start your project? Contact us for a free consultation.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Visit Us</h3>
+                                    <p>123 Design Street, Creative District<br>New York, NY 10001</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Email Us</h3>
+                                    <p>hello@prismcreative.co<br>info@prismcreative.co</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Call Us</h3>
+                                    <p>+1 (555) 123-4567<br>Mon-Fri, 9am-6pm EST</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                                <label for="name" class="form-label">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                                <label for="email" class="form-label">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="subject" class="form-control" required>
+                                    <option value="" disabled selected>Select Service</option>
+                                    <option value="ui-ux">UI/UX Design</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="mobile">Mobile App</option>
+                                    <option value="branding">Branding</option>
+                                </select>
+                                <label for="subject" class="form-label">Select Service</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
+                                <label for="message" class="form-label">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <svg width="40" height="40" viewBox="0 0 80 80">
+                        <polygon points="40,5 75,65 5,65" fill="none" stroke="#6c63ff" stroke-width="2"/>
+                        <circle cx="40" cy="40" r="20" fill="none" stroke="#6c63ff" stroke-width="2"/>
+                    </svg>
+                    <span>PRISM</span>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Services</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Brand Identity</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Company</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3 class="footer-nav-title">Resources</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Design Resources</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3 class="footer-nav-title">Stay Updated</h3>
+                    <p>Subscribe to our newsletter for design insights and company news.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" class="form-control" placeholder="Your Email" required>
+                            <button type="submit" class="btn-newsletter">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2023 Prism Creative. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
