@@ -1420,3 +1420,50 @@ window.addEventListener('load', function() {
     });
 });
  
+
+  // Fix for counter animation
+  document.addEventListener('DOMContentLoaded', function() {
+    // Simple counter animation
+    const stats = document.querySelectorAll('.stat-number');
+    
+    // Check when elements are in viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+        rect.bottom >= 0
+      );
+    }
+    
+    // Simple counter function
+    function animateCounter(element, target) {
+      let count = 0;
+      const duration = 2000; // 2 seconds
+      const increment = Math.ceil(target / (duration / 30));
+      
+      const timer = setInterval(() => {
+        count += increment;
+        if (count >= target) {
+          element.textContent = target;
+          clearInterval(timer);
+        } else {
+          element.textContent = count;
+        }
+      }, 30);
+    }
+    
+    // Check on scroll
+    function checkStats() {
+      stats.forEach(stat => {
+        if (isInViewport(stat) && !stat.classList.contains('counted')) {
+          stat.classList.add('counted');
+          const target = parseInt(stat.getAttribute('data-count'), 10);
+          animateCounter(stat, target);
+        }
+      });
+    }
+    
+    // Initial check and scroll event
+    checkStats();
+    window.addEventListener('scroll', checkStats);
+  });
