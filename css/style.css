@@ -2916,3 +2916,62 @@ button {
     font-size: 0.9rem;
   }
 }
+
+/* Fix Team Member Images Display */
+.team-member {
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: flat !important;
+  padding-bottom: 2rem;
+}
+
+.member-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-md);
+  transform-style: flat !important;
+  max-height: 300px;
+}
+
+.member-image-inner,
+.member-image {
+  transform-style: flat !important;
+  perspective: none !important;
+}
+
+.member-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.3s ease;
+  transform-style: flat !important;
+}
+
+/* Remove any 3D transforms that might be causing issues */
+.team-member:hover .member-image img {
+  transform: scale(1.05) !important;
+}
+
+/* Ensure social links show up correctly */
+.member-social {
+  bottom: 0;
+  height: auto;
+  min-height: 60px;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  transform: none !important;
+}
+
+/* Fix tilt effect that might be causing issues */
+[data-tilt] {
+  transform-style: flat !important;
+  perspective: none !important;
+  transform: none !important;
+}
